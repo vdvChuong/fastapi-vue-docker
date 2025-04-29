@@ -43,3 +43,23 @@
 │   │   └── HelloWorld.vue      # Example Vue component
 ├── dist/                       # (Generated after build) 
 ```
+
+# Build the FastAPI backend image
+   ```
+docker build -t fastapi-backend ./backend
+   ```
+
+# Run the FastAPI container on port 8000
+   ```
+docker run -p 8000:8000 fastapi-backend
+   ```
+
+# Build the Vue frontend image using its Dockerfile
+   ```
+docker build -t my-vue-app -f frontend/Dockerfile .
+   ```
+
+# Run the Vue container on port 8080
+   ```
+docker run -p 8080:8080 my-vue-app
+   ```
