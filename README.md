@@ -1,3 +1,14 @@
+📖 Overview
+This project consists of a FastAPI backend and a Vue.js frontend, containerized using Docker for easy development, testing, and deployment.
+
+Backend (/backend)
+Built with FastAPI, the backend provides a REST API that can handle requests, serve data, and optionally manage WebSocket connections.
+It runs using Uvicorn on port 8000.
+
+Frontend (/frontend)
+Built with Vue.js, the frontend offers a reactive and interactive user interface, communicating with the backend API.
+It runs using the Vue development server on port 8080.
+
 ### Installation
 1. Navigate to the FastAPI (BE) directory and install dependencies:
    Version: python:3.12
